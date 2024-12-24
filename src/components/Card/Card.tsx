@@ -1,12 +1,27 @@
 import styled from "styled-components";
+import { device } from "../../layout/MediaDevices";
 
 const StyledCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  border: 1px solid blue;
+  @media ${device.desktop} {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @media ${device.tablet} {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    background-color: magenta;
+  }
+
+  @media ${device.mobile} {
+    order: -1;
+    width: 100%;
+    text-align: center;
+    background-color: magenta;
+  }
 `;
 
 const Card = () => {

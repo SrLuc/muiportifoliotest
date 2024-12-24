@@ -30,6 +30,38 @@ const Nav = styled.nav`
 
   @media ${device.tablet} {
     background-color: blue;
+    width: 100%;
+
+    ul{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      color: white;
+      padding: 10px;
+    }
+  }
+
+  @media ${device.mobile} {
+    background-color: red;
+    width: 100%;
+    display: flex;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      li {
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 10px;
+        list-style: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
 `;
 
