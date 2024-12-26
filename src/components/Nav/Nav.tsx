@@ -4,7 +4,6 @@ import { device } from "../../layout/MediaDevices"; // Importe seus breakpoints 
 const Nav = styled.nav`
   @media ${device.desktop} {
     order: -1;
-    background-color: red;
     width: 5%;
     height: 100vh;
     display: flex;
@@ -16,34 +15,38 @@ const Nav = styled.nav`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 80px;
+      gap: 20px;
 
       li {
-        font-size: 20px;
+        font-size: 14px;
         letter-spacing: 2px;
         list-style: none;
-        color: white;
+        color: #2c2926;
+        font-weight: bold;
         cursor: pointer;
+
+        &:hover {
+          color: #f27141;
+        }
       }
     }
   }
 
   @media ${device.tablet} {
-    background-color: blue;
     width: 100%;
 
-    ul{
+    ul {
       display: flex;
       justify-content: space-around;
       align-items: center;
       list-style: none;
-      color: white;
-      padding: 10px;
+      color: #2c2926;
+      font-weight: bold;
+      padding: 15px;
     }
   }
 
   @media ${device.mobile} {
-    background-color: red;
     width: 100%;
     display: flex;
 
@@ -54,11 +57,10 @@ const Nav = styled.nav`
       width: 100%;
 
       li {
-        font-size: 12px;
-        letter-spacing: 2px;
-        padding: 10px;
+        font-size: 8px;
+        padding-bottom: 15px;
         list-style: none;
-        color: white;
+        color: #2c2926;
         cursor: pointer;
       }
     }

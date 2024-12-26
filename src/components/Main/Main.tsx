@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/MediaDevices";
+import { fontSizes, paddings } from "../../layout/FontsDevices";
 import BasicGrid from "../UI/Grid";
 
 const StyledMain = styled.div`
@@ -28,8 +29,10 @@ const StyledMain = styled.div`
     text-align: center;
 
     h1 {
-      letter-spacing: 0.3em;
-      padding: 0.5em;
+      margin-top: ${paddings.mobile};
+      padding: ${paddings.tablet};
+      font-size: ${fontSizes.tablet};
+      letter-spacing: 4px;
     }
   }
   @media ${device.mobile} {
@@ -37,6 +40,14 @@ const StyledMain = styled.div`
     width: 100%;
     height: 100%;
     text-align: center;
+
+    h1 {
+      margin-top: ${paddings.mobile};
+      padding: ${paddings.mobile};
+      font-size: ${fontSizes.mobile};
+      letter-spacing: 5px;
+
+    }
   }
 `;
 
