@@ -15,10 +15,10 @@ const Nav = styled.nav`
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 40px;
 
       li {
-        font-size: 14px;
+        font-size: 20px;
         letter-spacing: 2px;
         list-style: none;
         color: #2c2926;

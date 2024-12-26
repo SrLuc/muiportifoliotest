@@ -6,7 +6,7 @@ import { fontSizes, paddings } from "../../layout/FontsDevices";
 
 const StyledCard = styled.div`
   @media ${device.desktop} {
-    background-color: #f2f1e9;
+    background-color: #f2f1e99b;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -25,9 +25,11 @@ const StyledCard = styled.div`
       p {
         font-size: ${fontSizes.desktop};
         padding: ${paddings.mobile};
-        background-color: red;
         font-size: 15px;
         letter-spacing: 2px;
+      }
+
+      span{
       }
     }
   }
@@ -70,6 +72,10 @@ const StyledCard = styled.div`
         width: 40%;
       }
     }
+
+    span{
+        font-size: 9px;
+      }
   }
 `;
 
@@ -83,6 +89,7 @@ const Card = () => {
         <img src={naurtitle} alt="" />
         <p>ruanlucenaramos@gmail.com</p>
         <p>- - - - - - - - - - - - - - - - - - - - -</p>
+        <span>Fullstack Developer & Graphic Designer </span>
       </article>
     </StyledCard>
   );
