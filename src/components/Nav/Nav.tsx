@@ -19,7 +19,7 @@ const Nav = styled.nav`
       gap: 80px;
 
       li {
-        font-size: 25px;
+        font-size: 20px;
         letter-spacing: 2px;
         list-style: none;
         color: white;
